@@ -66,7 +66,7 @@ def process_files(filepath, names_data_file, ner_driver):
                     outfile.write(str(unique_names) + "||" + str(vi_text) + "\n")
 
 if __name__ == "__main__":
-    filepath = './Data/一胎俩宝，老婆大人别想逃_utf8.txt'  # path to your directory containing text files
+    filepath = './一胎俩宝，老婆大人别想逃_utf8.txt'  # path to your directory containing text files
     names_data_file = 'Names.txt'
     ner_driver = CkipNerChunker(model="bert-base")  # Initialize ner_driver in __main__
     process_files(filepath, names_data_file, ner_driver)
